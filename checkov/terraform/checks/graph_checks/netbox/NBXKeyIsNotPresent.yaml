@@ -1,0 +1,12 @@
+metadata:
+  name: "Ensure key is not present"
+  category: "GENERAL_SECURITY"
+  id: "CKV2_NBX_1"
+scope:
+  provider: "NETBOX"
+definition:
+  cond_type: "attribute"
+  resource_types:
+    - netbox_token
+  attribute: "key"
+  operator: "not_exists"
